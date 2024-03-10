@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="3dp"
+            android:layout_marginTop="200dp"
+            app:cardCornerRadius="5dp"
+            android:clickable="true"
+            android:layout_marginStart="17.5dp"
+            android:layout_marginEnd="17.5dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true"
+            android:padding="15dp"
+            android:id="@+id/viewRented"
+            android:focusable="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:padding="15dp"
+                android:layout_height="wrap_content"
+                tools:ignore="UseCompoundDrawables">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/view_all_rented_books"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    />
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/bg4"
+                    android:layout_marginStart="60dp"
+                    android:id="@+id/img"
+                    android:contentDescription="@string/app_name" />
+
+            </LinearLayout>
+
+
+
+
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="3dp"
+            android:clickable="true"
+            app:cardCornerRadius="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="17.5dp"
+            android:layout_marginEnd="17.5dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true"
+            android:padding="15dp"
+            android:layout_below="@id/viewRented"
+            android:id="@+id/bookRent"
+            android:focusable="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:padding="15dp"
+                android:layout_height="wrap_content"
+                tools:ignore="UseCompoundDrawables">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/book_rent_out"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    />
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/bg4"
+                    android:layout_marginStart="115dp"
+                    android:id="@+id/img2"
+                    android:contentDescription="@string/app_name" />
+
+            </LinearLayout>
+
+
+
+
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="3dp"
+        android:clickable="true"
+        app:cardCornerRadius="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="17.5dp"
+        android:layout_marginEnd="17.5dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true"
+        android:padding="15dp"
+        android:layout_below="@id/bookRent"
+        android:id="@+id/addBook"
+        android:focusable="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:padding="15dp"
+            android:layout_height="wrap_content"
+            tools:ignore="UseCompoundDrawables">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/add_a_new_book"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginTop="20dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                />
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:src="@drawable/bg4"
+                android:layout_marginStart="110dp"
+                android:id="@+id/img3"
+                android:contentDescription="@string/app_name" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="3dp"
+        android:layout_below="@id/addBook"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="5dp"
+        android:clickable="true"
+        android:layout_marginStart="17.5dp"
+        android:layout_marginEnd="17.5dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true"
+        android:padding="15dp"
+        android:id="@+id/viewAllAvailableBooks"
+        android:focusable="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:padding="15dp"
+            android:layout_height="wrap_content"
+            tools:ignore="UseCompoundDrawables">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/search_for_a_book"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginTop="20dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                />
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:src="@drawable/bg4"
+                android:layout_marginStart="95dp"
+                android:id="@+id/img4"
+                android:contentDescription="@string/app_name" />
+
+        </LinearLayout>
+
+
+
+
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

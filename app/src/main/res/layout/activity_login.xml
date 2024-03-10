@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg4"
+    tools:context=".LoginActivity">
+    <EditText
+        android:layout_centerVertical="true"
+        android:id="@+id/staffNumberEditText"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="10dp"
+        android:inputType="textEmailAddress"
+        android:textColor="#000000"
+        android:textColorHint="#123"
+        android:hint="@string/prompt_email"
+        android:background="@drawable/edt_style"
+        tools:ignore="RtlSymmetry" />
+
+    <EditText
+        android:layout_below="@id/staffNumberEditText"
+        android:id="@+id/passwordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_password"
+        android:inputType="textPassword"
+        android:paddingStart="10dp"
+        android:textColor="#000000"
+        android:textColorHint="#123"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
+        android:background="@drawable/edt_style"
+        tools:ignore="RtlSymmetry"
+        />
+
+    <Button
+        android:layout_below="@id/registerTextView"
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
+        android:background="@drawable/edt_style"
+        tools:ignore="RtlSymmetry"
+        android:text="@string/login"
+        />
+
+    <TextView
+        android:layout_below="@id/passwordEditText"
+        android:id="@+id/registerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/acc"
+        android:textSize="13sp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="15dp"
+        android:textColor="#062FAA"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordEditText"
+        android:text="@string/forgot_password"
+        android:layout_marginTop="15dp"
+        android:textColor="#062FAA"
+        android:id="@+id/fPassword"
+        android:textStyle="bold"
+        android:layout_marginStart="265dp"
+        />
+
+</RelativeLayout>

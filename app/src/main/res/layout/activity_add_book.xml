@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".AddBookActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_new_book"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="#FF9800"
+            />
+
+
+        <ImageView
+            android:id="@+id/ivBookImage"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="100dp"
+            android:src="@android:drawable/ic_menu_gallery"
+            android:layout_centerHorizontal="true"
+            />
+
+        <Spinner
+            android:id="@+id/spinnerFaculties"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edtIsbn"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edt_style"
+            android:popupBackground="@android:color/white"
+            android:spinnerMode="dropdown"
+            android:drawableEnd="@android:drawable/arrow_down_float"
+            android:padding="15dp" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/prompt_title"
+            android:inputType="text"
+            android:background="@drawable/edt_style"
+            android:layout_margin="10dp"
+            android:padding="15dp"
+            android:id="@+id/etTitle"
+            android:layout_below="@id/ivBookImage"
+            android:layout_marginTop="20dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_author_name"
+            android:inputType="text"
+            android:background="@drawable/edt_style"
+            android:layout_margin="10dp"
+            android:padding="15dp"
+            android:id="@+id/etAuthor"
+            android:layout_below="@id/etTitle"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_shelf_no"
+            android:inputType="text"
+            android:background="@drawable/edt_style"
+            android:layout_margin="10dp"
+            android:padding="15dp"
+            android:id="@+id/etShelfNo"
+            android:layout_below="@id/etAuthor"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_isbn"
+            android:inputType="text"
+            android:background="@drawable/edt_style"
+            android:layout_margin="10dp"
+            android:padding="15dp"
+            android:id="@+id/edtIsbn"
+            android:layout_below="@id/etShelfNo"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/prompt_year"
+            android:inputType="number"
+            android:background="@drawable/edt_style"
+            android:layout_margin="10dp"
+            android:padding="15dp"
+            android:id="@+id/edtYear"
+            android:layout_below="@id/spinnerFaculties"
+            />
+        <Button
+            android:id="@+id/btnAddBook"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="@string/add_book"
+            android:background="@drawable/edt_style"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/edtYear"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+</ScrollView>
+

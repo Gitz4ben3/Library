@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "1076474626510",
+    "firebase_url": "https://library-e1155-default-rtdb.firebaseio.com",
+    "project_id": "library-e1155",
+    "storage_bucket": "library-e1155.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1076474626510:android:ebb273ac9c18dabf10ab9f",
+        "android_client_info": {
+          "package_name": "com.example.librarian"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnbXSNk1WUge8M3xIvF7g0T0R8p9AD5Tc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1076474626510:android:2f56de01fac5dc4010ab9f",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnbXSNk1WUge8M3xIvF7g0T0R8p9AD5Tc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
